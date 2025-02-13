@@ -128,6 +128,7 @@ export default function ChatContainer() {
           Authorization: `Bearer ${apiKey}`,
         },
         body: JSON.stringify({
+          inputs: {},  // Agregamos el objeto inputs requerido
           query: content,
           response_mode: "streaming",
           conversation_id: conversationId,
