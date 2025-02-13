@@ -30,8 +30,8 @@ export default function ChatInput({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         onKeyDown={handleKeyDown}
-        placeholder="Type your message..."
-        className="flex-1 max-h-32 p-4 pr-12 text-sm bg-transparent border-none outline-none resize-none"
+        placeholder={isLoading ? "Por favor espera mientras respondo..." : "Type your message..."}
+        className="flex-1 max-h-32 p-4 pr-12 text-sm bg-transparent border-none outline-none resize-none disabled:opacity-50 disabled:cursor-not-allowed"
         disabled={isLoading}
         rows={1}
       />
