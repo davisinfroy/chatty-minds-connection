@@ -23,14 +23,18 @@ export default function ChatMessage({ message }: ChatMessageProps) {
     >
       <div
         className={cn(
-          "flex items-center justify-center w-8 h-8 rounded-full",
-          isUser ? "bg-purple-100" : "bg-blue-100"
+          "flex items-center justify-center rounded-full overflow-hidden",
+          isUser ? "w-8 h-8 bg-purple-100" : "w-10 h-10"
         )}
       >
         {isUser ? (
           <User className="w-5 h-5 text-purple-600" />
         ) : (
-          <Bot className="w-5 h-5 text-blue-600" />
+          <img
+            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+            alt="Assistant Avatar"
+            className="w-full h-full object-cover"
+          />
         )}
       </div>
       
