@@ -1,7 +1,7 @@
 
 import React from "react";
 import { cn } from "@/lib/utils";
-import { Bot, Coins } from "lucide-react";
+import { Bot } from "lucide-react";
 
 interface ChatMessageProps {
   message: {
@@ -24,11 +24,15 @@ export default function ChatMessage({ message }: ChatMessageProps) {
       <div
         className={cn(
           "flex items-center justify-center rounded-full overflow-hidden",
-          isUser ? "w-8 h-8 bg-purple-100" : "w-10 h-10"
+          isUser ? "w-8 h-8 bg-gradient-to-r from-purple-500 via-cyan-500 to-green-500" : "w-10 h-10"
         )}
       >
         {isUser ? (
-          <Coins className="w-5 h-5 text-purple-600" />
+          <img
+            src="/lovable-uploads/5aabf2d2-5949-45e2-8382-351c8f254aa6.png"
+            alt="User Avatar"
+            className="w-6 h-6"
+          />
         ) : (
           <img
             src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
