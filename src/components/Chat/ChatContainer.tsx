@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from "react";
 import { Send } from "lucide-react";
 import { toast } from "sonner";
@@ -175,9 +174,9 @@ export default function ChatContainer() {
       <AlertDialog open={showApiKeyDialog} onOpenChange={setShowApiKeyDialog}>
         <AlertDialogContent>
           <AlertDialogHeader>
-            <AlertDialogTitle>Enter your Dify API Key</AlertDialogTitle>
+            <AlertDialogTitle>Enter your Wossun AI API Key</AlertDialogTitle>
             <AlertDialogDescription>
-              Please enter your Dify API key to start chatting. You can find your API key in your Dify dashboard.
+              Por favor agrega la clave su novia cripto
             </AlertDialogDescription>
           </AlertDialogHeader>
           <div className="my-4">
